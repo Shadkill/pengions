@@ -3,7 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const app = express();
 const upload = multer({ storage: multer.memoryStorage() });
-const PORT = 3000;
+const PORT = 5000;
 
 let crc32Table = null;
 function makeCrc32Table() {
