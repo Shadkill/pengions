@@ -5,8 +5,8 @@
         flex-direction: column;
       }
       section{
-        width: 100vw;
-        height: 96vh;
+        width: 98vw;
+        height: 94vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,6 +59,7 @@
         color: #323C45;
         font-size: 15px;
         font-family: 'Comfortaa';
+        text-align: center;
       }
       label{
         font-family: 'Comfortaa';
@@ -71,15 +72,16 @@
           overflow-x: hidden;
         }
         h1{
-          font-size: 20px;
+          font-size: 18px;
         }
         label{
           font-size: 15px;
         }
         form{
-          width: 275px;
+          width: 250px;
           height:300px;
-          gap: 5vw;
+          gap: 30px;
+          padding: 10px;
         }
         input{
           font-size: 12px;
