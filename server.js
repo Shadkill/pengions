@@ -4,7 +4,9 @@ const path = require('path');
 const app = express();
 const upload = multer({ storage: multer.memoryStorage() });
 const PORT = 5000;
-
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
 let crc32Table = null;
 function makeCrc32Table() {
   const table = [];
@@ -87,7 +89,9 @@ function decodeFileContent(fileContent) {
 }
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+  res.render('index');
+});
 
 app.post('/decode', upload.single('file'), (req, res) => {
   if (!req.file) {

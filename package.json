@@ -11,6 +11,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "ejs": "^4.0.1",
     "express": "^5.2.1",
     "fs": "^0.0.1-security",
     "multer": "^2.0.2",

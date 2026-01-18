@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Декодер файлов для голубей</title>
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Твои стили -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <h1>Декодер файлов для голубей</h1>
+        <form action="/decode" method="POST" enctype="multipart/form-data">
+          <div class="div_input">
+            <label>
+              Выберите файл (.f, .txt):
+            </label>
+            <input type="file" name="file" accept=".f,.txt" required />
+          </div>
+          <button type="submit">Загрузить и декодировать</button>
+        </form>
+        <p>
+          После отправки формы браузер <br />
+          предложит скачать декодированный файл.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
